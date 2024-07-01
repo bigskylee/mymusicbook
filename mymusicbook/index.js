@@ -26,6 +26,9 @@ app.post('/test', async function (req, res, next) {
                 '&strCond=0&intPage=' +
                 number,
         )
+        const jsonmusic = JSON.parse(music.data)
+
+        console.log(jsonmusic)
         //     if (number < 5) {
         console.log(music.data)
         console.log(typeof music.data)
