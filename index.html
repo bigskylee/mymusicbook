@@ -1,0 +1,827 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>:: Together & Joy TJ media 노래검색 ::</title>
+
+<link rel="stylesheet" href="/css/common.css" type="text/css" />
+<link rel="stylesheet" href="/css/contents.css" type="text/css" />
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="/css/ie6_common.css">
+<![endif]-->
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="/css/ie7_common.css">
+<![endif]-->
+
+<SCRIPT language=javascript src="/js/common.js"></SCRIPT>
+
+<SCRIPT language=javascript src="/js/noline.js"></SCRIPT>
+<SCRIPT language=javascript src="/js/menuScript.js"></SCRIPT>
+
+<!--동일 페이지 호출 방지 로직 추가(1분에 10회) 2020-11-25 By Rhee//-->
+<SCRIPT language=javascript src="/js/jquery.js"></SCRIPT>
+<SCRIPT language=javascript src="/js/jquery.storageapi.min.js"></SCRIPT>
+<SCRIPT language=javascript src="/js/limited_connect.js"></SCRIPT>
+</head>
+
+<!--- javascript function --->
+<script language="javascript">
+<!--
+
+        function OnSizeList(i) {
+                var str             = 'song_search_list.asp'
+                                                        + '?strType=2'
+                            + '&natType='
+                                                        + '&strText=악뮤'
+                                                        + '&strCond=0';
+                if (document.form.strSize01) {
+                        str             = str
+                                                        + '&strSize01=' + document.form.strSize01.value;
+                }
+                if (document.form.strSize02) {
+                        str             = str
+                                                        + '&strSize02=' + document.form.strSize02.value;
+                }
+                if (document.form.strSize03) {
+                        str             = str
+                                                        + '&strSize03=' + document.form.strSize03.value;
+                }
+                if (document.form.strSize04) {
+                        str             = str
+                                                        + '&strSize04=' + document.form.strSize04.value;
+                }
+                if (document.form.strSize05) {
+                        str             = str
+                                                        + '&strSize05=' + document.form.strSize05.value;
+                }
+                location            = str;
+        }
+
+//-->
+</script>
+
+<body onLoad="first(1,1)">
+
+<div id="wrap">
+
+<!--Header S-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26130342-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<div id="header_bg">
+
+        <div id="header">
+
+
+        <!--TOP GLOBAL S-->
+
+        <div class="top_wrap"><!-- 202106Renew byKSY-->
+                <div class="logo"><a href="/"><img src="/images/common/top_logo.gif"></a></div>
+
+        <div class="right">
+                <iframe id="search" width="440" height="50" src="/include/top_search_utf8.asp" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" ></iframe>
+                        <a class="topQuickLink quick_1" href="/service/service_agencyList.asp"><img src="/images/common/btn_top_store.png"></a>
+                        <a class="topQuickLink quick_2" href="/service/service_serviceCenter.asp"><img src="/images/common/btn_top_customer.png"></a>
+        </div>
+                </div>
+
+        <!--TOP GLOBAL E-->
+
+        <!--TOP MENU S-->
+        <!-- 202106renew_by KSY -->
+        <div class="menu">
+                <ul class="menu" id="menu">
+                                <li style="padding-right:115px;"><a href="/tjsong/song_search.asp"><img src="/images/common/menu_01.gif" onmouseover="this.src='/images/common/menu_01on.gif'" 
+onmouseout="this.src='/images/common/menu_01.gif'" alt="TJ�뷡��"/></a></li>
+                                <li style="padding-right:100px;"><a href="/products/player_list.asp"><img src="/images/common/menu_02.gif" onmouseover="this.src='/images/common/menu_02on.gif'" onmouseout="this.src='/images/common/menu_02.gif'" alt="��ǰ�Ұ�"/></a></li>
+                                <li style="padding-right:102px;"><a href="/service/service_faqList.asp"><img src="/images/common/menu_03.gif" onmouseover="this.src='/images/common/menu_03on.gif'" onmouseout="this.src='/images/common/menu_03.gif'" alt="��������"/></a></li>
+                                <li style="padding-right:115px;"><a href="/pr/pr_newsList.asp"><img src="/images/common/menu_04.gif" onmouseover="this.src='/images/common/menu_04on.gif'" onmouseout="this.src='/images/common/menu_04.gif'" alt="PR"/></a></li>
+                                <li style="padding-right:133px;"><a href="/ir/ir_finance.asp"><img src="/images/common/menu_05.gif" onmouseover="this.src='/images/common/menu_05on.gif'" onmouseout="this.src='/images/common/menu_05.gif'" alt="IR"/></a></li>
+                                <li style="padding-right:100px;"><a href="/company/company_info.asp"><img src="/images/common/menu_06.gif" onmouseover="this.src='/images/common/menu_06on.gif'" onmouseout="this.src='/images/common/menu_06.gif'" alt="ȸ��Ұ�"/></a></li>
+                                <li style="padding-right:0;"><a href="/recurit/recurit_infoList.asp"><img src="/images/common/menu_07.gif" onmouseover="this.src='/images/common/menu_07on.gif'" onmouseout="this.src='/images/common/menu_07.gif'" alt="ä������"/></a></li>
+                                <ul>
+                                        <li>
+                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                <colgroup>
+                                                        <col width="194">
+                                                        <col width="171">
+                                                        <col width="191">
+                                                        <col width="140">
+                                                        <col width="153">
+                                                        <col width="170">
+                                                        <col width="*">
+                                                </colgroup>
+                                                <tr>
+                                                        <td class="menuImg"><a href="/tjsong/song_search.asp"><img src="/images/common/s01_btn01.gif" onmouseover="this.src='/images/common/s01_btn01i.gif'" onmouseout="this.src='/images/common/s01_btn01.gif'" alt="TJ���ְ�"/></a></td>
+                                                        <td class="menuImg"><a href="/products/player_list.asp"><img src="/images/common/s02_btn01.gif" onmouseover="this.src='/images/common/s02_btn01i.gif'" onmouseout="this.src='/images/common/s02_btn01.gif'" alt="���ֱ�" /></a></td>
+                                                        <td class="menuImg"><a href="/service/service_faqList.asp"><img src="/images/common/s03_btn01.gif" onmouseover="this.src='/images/common/s03_btn01i.gif'" onmouseout="this.src='/images/common/s03_btn01.gif'" alt="�����ϴ� ����"/></a></td>
+                                                        <td class="menuImg"><a href="/pr/pr_newsList.asp"><img src="/images/common/s04_btn01.gif" onmouseover="this.src='/images/common/s04_btn01i.gif'" onmouseout="this.src='/images/common/s04_btn01.gif'" alt="����"/></a></td>
+                                                        <td class="menuImg"><a href="/ir/ir_finance.asp"><img src="/images/common/s05_btn01.gif" onmouseover="this.src='/images/common/s05_btn01i.gif'" onmouseout="this.src='/images/common/s05_btn01.gif'" alt="�繫����"/></a></td>
+                                                        <td class="menuImg"><a href="/company/company_info.asp"><img src="/images/common/s06_btn01.gif" onmouseover="this.src='/images/common/s06_btn01i.gif'" onmouseout="this.src='/images/common/s06_btn01.gif'" alt="�������"/></a></td>
+                                                        <td class="menuImg"><a href="/recurit/recurit_infoList.asp"><img src="/images/common/s07_btn01.gif" onmouseover="this.src='/images/common/s07_btn01i.gif'" onmouseout="this.src='/images/common/s07_btn01.gif'" alt="ä��ȳ�"/></a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="menuImg"><a href="/tjsong/song_eventList.asp"><img src="/images/common/s01_btn02.gif" onmouseover="this.src='/images/common/s01_btn02i.gif'" onmouseout="this.src='/images/common/s01_btn02.gif'" alt="TJ�̺�Ʈ"/></a></td>
+                                                        <td class="menuImg"><a href="/products/amp_list.asp"><img src="/images/common/s02_btn02.gif" onmouseover="this.src='/images/common/s02_btn02i.gif'" onmouseout="this.src='/images/common/s02_btn02.gif'" alt="����" /></a></td>
+                                                        <td class="menuImg"><a href="/service/service_question.asp"><img src="/images/common/s03_btn02.gif" onmouseover="this.src='/images/common/s03_btn02i.gif'" onmouseout="this.src='/images/common/s03_btn02.gif'" alt="1:1 ����"/></a></td>
+                                                        <td class="menuImg"><a href="/pr/pr_adList.asp"><img src="/images/common/s04_btn02.gif" onmouseover="this.src='/images/common/s04_btn02i.gif'" onmouseout="this.src='/images/common/s04_btn02.gif'" alt="����"/></a></td>
+                                                        <td class="menuImg"><a href="/ir/ir_noticeInfo.asp"><img src="/images/common/s05_btn02.gif" onmouseover="this.src='/images/common/s05_btn02i.gif'" onmouseout="this.src='/images/common/s05_btn02.gif'" alt="��������"/></a></td>
+                                                        <td class="menuImg"><a href="/company/company_greeting.asp"><img src="/images/common/s06_btn02_20201209.gif" onmouseover="this.src='/images/common/s06_btn02i_20201209.gif'" onmouseout="this.src='/images/common/s06_btn02_20201209.gif'" alt="�λ縻"/></a></td>
+                                                        <td class="menuImg"><a href="/recurit/recurit_ability.asp"><img src="/images/common/s07_btn02.gif" onmouseover="this.src='/images/common/s07_btn02i.gif'" onmouseout="this.src='/images/common/s07_btn02.gif'" alt="�����"/></a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="menuImg"><a href="/tjsong/song_tip.asp"><img src="/images/common/s01_btn03.gif" onmouseover="this.src='/images/common/s01_btn03i.gif'" onmouseout="this.src='/images/common/s01_btn03.gif'" alt="TJ���ֱ�Ȱ����"/></a></td>
+                                                        <td class="menuImg"><a href="/products/speaker_list.asp"><img src="/images/common/s02_btn03.gif" onmouseover="this.src='/images/common/s02_btn03i.gif'" onmouseout="this.src='/images/common/s02_btn03.gif'" alt="����Ŀ" /></a></td>
+                                                        <td class="menuImg"><a href="/service/service_serviceCenter.asp"><img src="/images/common/s03_btn03.gif?t=20220502" onmouseover="this.src='/images/common/s03_btn03i.gif?t=20220502'" onmouseout="this.src='/images/common/s03_btn03.gif?t=20220502'" alt="���񽺼��� �ȳ�"/></a></td>
+                                                        <td class="menuImg"><a href="/pr/pr_publicList.asp"><img src="/images/common/s04_btn03.gif" onmouseover="this.src='/images/common/s04_btn03i.gif'" onmouseout="this.src='/images/common/s04_btn03.gif'" alt="TJ ȫ����"/></a></td>
+                                                        <td class="menuImg"><a href="/ir/ir_faqList.asp"><img src="/images/common/s05_btn04.gif" onmouseover="this.src='/images/common/s05_btn04i.gif'" onmouseout="this.src='/images/common/s05_btn04.gif'" alt="FAQ"/></a></td>
+                                                        <td class="menuImg"><a href="/company/company_business.asp"><img src="/images/common/s06_btn03.gif" onmouseover="this.src='/images/common/s06_btn03i.gif'" onmouseout="this.src='/images/common/s06_btn03.gif'" alt="�����Ȳ"/></a></td>
+                                                        <td class="menuImg"><a href="/recurit/recurit_personnel.asp"><img src="/images/common/s07_btn03.gif" onmouseover="this.src='/images/common/s07_btn03i.gif'" onmouseout="this.src='/images/common/s07_btn03.gif'" alt="�λ�����"/></a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="menuImg"><a href="/tjsong/song_afreeca.asp"><img src="/images/common/s01_btn13.gif" onmouseover="this.src='/images/common/s01_btn13i.gif'" onmouseout="this.src='/images/common/s01_btn13.gif'" alt="������īTV ���̺� ���"/></a></td>
+                                                        <td class="menuImg"><a href="/products/mic_list.asp"><img src="/images/common/s02_btn04.gif" onmouseover="this.src='/images/common/s02_btn04i.gif'" onmouseout="this.src='/images/common/s02_btn04.gif'" alt="����ũ"/></a></td>
+                                                        <td class="menuImg"><a href="/service/service_agencyList.asp"><img src="/images/common/s03_btn04.gif" onmouseover="this.src='/images/common/s03_btn04i.gif'" onmouseout="this.src='/images/common/s03_btn04.gif'" alt="����ó �ȳ�"/></a></td>
+                                                        <td rowspan="9" valign="top" class="menuImg"></td>
+                                                        <td rowspan="9" valign="top" class="menuImg"><a href="/ir/ir_elstock.asp"><img src="/images/common/s05_btn05.gif" onmouseover="this.src='/images/common/s05_btn05i.gif'" onmouseout="this.src='/images/common/s05_btn05.gif'" alt="�������������ȳ�"/></a></td>
+                                                        <td class="menuImg"><a href="/company/company_subsidiary.asp"><img src="/images/common/s06_btn09.gif" onmouseover="this.src='/images/common/s06_btn09i.gif'" onmouseout="this.src='/images/common/s06_btn09.gif'" alt="��ȸ��"/></a></td>
+                                                        <td class="menuImg"><a href="/recurit/recurit_welfare.asp"><img src="/images/common/s07_btn04.gif" onmouseover="this.src='/images/common/s07_btn04i.gif'" onmouseout="this.src='/images/common/s07_btn04.gif'" alt="�����Ļ�"/></a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="menuImg"><a href="/tjsong/touch_karaoke.asp"><img src="/images/common/s01_btn11.gif" onmouseover="this.src='/images/common/s01_btn11i.gif'" onmouseout="this.src='/images/common/s01_btn11.gif'" alt="��ġ�뷡��"/></a></td>
+                                                        <td class="menuImg"><a href="/products/bluetoothmic_TMB-10.asp"><img src="/images/common/s02_btn15.gif" onmouseover="this.src='/images/common/s02_btn15i.gif'" onmouseout="this.src='/images/common/s02_btn15.gif'" alt="�������� ����ũ" /></a></td>
+                                                        <td class="menuImg"><a href="/service/service_establish.asp"><img src="/images/common/s03_btn05.gif" onmouseover="this.src='/images/common/s03_btn05i.gif'" onmouseout="this.src='/images/common/s03_btn05.gif'" alt="â�� �ȳ�"/></a></td>
+                                                        <td class="menuImg"><a href="/company/company_global.asp"><img src="/images/common/s06_btn04.gif" onmouseover="this.src='/images/common/s06_btn04i.gif'" onmouseout="this.src='/images/common/s06_btn04.gif'" alt="�۷ι� TJ"/></a></td>
+                                                        <td rowspan="8" valign="top" td class="menuImg"><a href="/recurit/recurit_faqList.asp"><img src="/images/common/s05_btn04.gif" onmouseover="this.src='/images/common/s05_btn04i.gif'" onmouseout="this.src='/images/common/s05_btn04.gif'" alt="FAQ"/></a></td>
+                                                </tr>
+
+                                                <tr>
+                                                        <td class="menuImg"><a href="/tjsong/club_karaoke.asp"><img src="/images/common/s01_btn190319.gif" onmouseover="this.src='/images/common/s01_btn190319_.gif'" onmouseout="this.src='/images/common/s01_btn190319.gif'" alt="Ŭ���뷡��"/></a></td>
+                                                        <td class="menuImg"><a href="/products/manager_list.asp"><img src="/images/common/s02_btn06.gif" onmouseover="this.src='/images/common/s02_btn06i.gif'" onmouseout="this.src='/images/common/s02_btn06.gif'" alt="�뷡�������" /></a></td>
+                                                        <td class="menuImg"><a href="/service/service_exit.asp"><img src="/images/common/s03_btn06.gif" onmouseover="this.src='/images/common/s03_btn06i.gif'" onmouseout="this.src='/images/common/s03_btn06.gif'" alt="�ǳ��ȳ� ���� ���"/></a></td>
+                                                        <td class="menuImg"><a href="/company/company_history.asp"><img src="/images/common/s06_btn05.gif" onmouseover="this.src='/images/common/s06_btn05i.gif'" onmouseout="this.src='/images/common/s06_btn05.gif'" alt="����"/></a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="menuImg"><a href="/tjsong/best_store.asp"><img src="/images/common/s01_btn06.gif" onmouseover="this.src='/images/common/s01_btn06i.gif'" onmouseout="this.src='/images/common/s01_btn06.gif'" alt="TJ��������ü� �������"/></a></td>
+                                                        <td class="menuImg"><a href="/products/monitor_list.asp"><img src="/images/common/s02_btn11.gif" onmouseover="this.src='/images/common/s02_btn11i.gif'" onmouseout="this.src='/images/common/s02_btn11.gif'" alt="�����" /></a></td>
+                                                        <td class="menuImg"><a href="/service/service_pdsSong.asp"><img src="/images/common/s03_btn07.gif" onmouseover="this.src='/images/common/s03_btn07i.gif'" onmouseout="this.src='/images/common/s03_btn07.gif'" alt="�ڷ��"/></a></td>
+                                                        <td class="menuImg"><a href="/company/company_cibi.asp"><img src="/images/common/s06_btn06.gif" onmouseover="this.src='/images/common/s06_btn06i.gif'" onmouseout="this.src='/images/common/s06_btn06.gif'" alt="CI"/></a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="menuImg"><a href="/tjsong/song_coin.asp"><img src="/images/common/s01_btn08.gif" onmouseover="this.src='/images/common/s01_btn08i.gif'" onmouseout="this.src='/images/common/s01_btn08.gif'" alt="���������� �뷡��"/></a></td>
+                                                        <td class="menuImg"><a href="/products/clubbutton_TRC-20.asp"><img src="/images/common/s02_btn13.gif" onmouseover="this.src='/images/common/s02_btn13i.gif'" onmouseout="this.src='/images/common/s02_btn13.gif'" alt="Ŭ����ư" /></a></td>
+                                                        <!-- <td rowspan="5" valign="top" class="menuImg"><a href="/service/service_freeExperience.asp"><img src="/images/common/s03_btn10.gif" onmouseover="this.src='/images/common/s03_btn10i.gif'" onmouseout="this.src='/images/common/s03_btn10.gif'" alt="���� ü��" /></a></td> -->
+                                                        <td class="menuImg"><a href="/company/company_contact.asp"><img src="/images/common/s06_btn07.gif" onmouseover="this.src='/images/common/s06_btn07i.gif'" onmouseout="this.src='/images/common/s06_btn07.gif'" alt="Contact"/></a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="menuImg"><a href="/tjsong/song_knowledge.asp"><img src="/images/common/s01_btn05.gif" onmouseover="this.src='/images/common/s01_btn05i.gif'" onmouseout="this.src='/images/common/s01_btn05.gif'" alt="�뷡�� ����â��"/></a></td>
+                                                        <td class="menuImg"><a href="/products/rhythmbox_TRB-10.asp"><img src="/images/common/s02_btn12.gif" onmouseover="this.src='/images/common/s02_btn12i.gif'" onmouseout="this.src='/images/common/s02_btn12.gif'" alt="����ڽ�" /></a></td>
+                                                        <td rowspan="4" valign="top" class="menuImg"><a href="/company/company_ethics.asp"><img src="/images/common/s06_btn08.gif" onmouseover="this.src='/images/common/s06_btn08i.gif'" onmouseout="this.src='/images/common/s06_btn08.gif'" alt="�����濵��ħ"/></a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="menuImg"><a href="/tjsong/payment.asp"><img src="/images/common/s01_btn12.gif" onmouseover="this.src='/images/common/s01_btn12i.gif'" onmouseout="this.src='/images/common/s01_btn12.gif'" alt="ī��/QR ����"/></a></td>
+                                                        <td rowspan="3" valign="top" class="menuImg"><a href="/products/paymentsystem_TCR-1.asp"><img src="/images/common/s02_btn14.gif" onmouseover="this.src='/images/common/s02_btn14i.gif'" onmouseout="this.src='/images/common/s02_btn14.gif'" alt="�����ý���" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="menuImg"><a href="/tjsong/song_manager.asp"><img src="/images/common/s01_btn07.gif" onmouseover="this.src='/images/common/s01_btn07i.gif'" onmouseout="this.src='/images/common/s01_btn07.gif'" alt="TJ�Ŵ���(���ֿ�) ��"/></a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="menuImg"><a href="/tjsong/song_charge.asp"><img src="/images/common/s01_btn10.gif" onmouseover="this.src='/images/common/s01_btn10i.gif'" onmouseout="this.src='/images/common/s01_btn10.gif'" alt="���� �� ��û"/></a></td>
+                                                </tr>
+                                                </table>
+                                        </li>
+                                </ul>
+            </ul>
+            <script type="text/javascript">
+                var menu=new menu.dd("menu");
+                menu.init("menu","menuhover");
+                </script>
+        </div>
+        <!--TOP MENU E-->
+
+
+    </div>
+
+
+</div>
+<!--Header E-->
+
+
+<!--Loacation S-->
+<div id="location">
+        <ul class="bullet">Home > TJ 노래방 > TJ 반주곡> <span>노래검색</span></ul>
+</div>
+<!--Loacation E-->
+
+<!--Body S-->
+<div id="body">
+
+        <!--space S-->
+        <div class="space"></div>
+        <!--space E-->
+
+        <!--left S-->
+
+
+
+        <script language="JavaScript" src="../js/left_1.js?v=3"></script>
+
+
+
+    <!--left S
+    <div id="left_menu1">
+      <div class="lmenu01">
+            <ul>
+                <li class="menu1depth"><a href="#"><img src="/images/leftmenu/left_0101_01_n.png" onmouseover="this.src='/images/leftmenu/left_0101_01_v.png'" onmouseout="this.src='/images/leftmenu/left_0101_01_n.png'" /></a></li>
+                <li class="space1"></li>
+                <li class="menu2depth"><a href="#"><img src="/images/leftmenu/lmenu_01_01_s01.png" onmouseover="this.src='/images/leftmenu/lmenu_01_01_s01i.png'" onmouseout="this.src='/images/leftmenu/lmenu_01_01_s01.png'" /></a></li>
+                <li class="menu2depth"><a href="#"><img src="/images/leftmenu/lmenu_01_01_s02.png" onmouseover="this.src='/images/leftmenu/lmenu_01_01_s02i.png'" onmouseout="this.src='/images/leftmenu/lmenu_01_01_s02.png'" /></a></li>
+                <li class="menu2depth"><a href="#"><img src="/images/leftmenu/lmenu_01_01_s03.png" onmouseover="this.src='/images/leftmenu/lmenu_01_01_s03i.png'" onmouseout="this.src='/images/leftmenu/lmenu_01_01_s03.png'" /></a></li>
+                <li class="menu2depth"><a href="#"><img src="/images/leftmenu/lmenu_01_01_s04.png" onmouseover="this.src='/images/leftmenu/lmenu_01_01_s04i.png'" onmouseout="this.src='/images/leftmenu/lmenu_01_01_s04.png'" /></a></li>
+                <li class="space2"></li>
+                <li class="menu1depth"><a href="#"><img src="/images/leftmenu/left_0101_02_n.png" onmouseover="this.src='/images/leftmenu/left_0101_02_v.png'" onmouseout="this.src='/images/leftmenu/left_0101_02_n.png'" /></a></li>
+                <li class="menu1depth"><a href="#"><img src="/images/leftmenu/left_0101_03_n.png" onmouseover="this.src='/images/leftmenu/left_0101_03_v.png'" onmouseout="this.src='/images/leftmenu/left_0101_03_n.png'" /></a></li>
+                <li class="menu1depth"><a href="#"><img src="/images/leftmenu/left_0101_04_n.png" onmouseover="this.src='/images/leftmenu/left_0101_04_v.png'" onmouseout="this.src='/images/leftmenu/left_0101_04_n.png'" /></a></li>
+                <li class="menu1depth"><a href="#"><img src="/images/leftmenu/left_0101_05_n.png" onmouseover="this.src='/images/leftmenu/left_0101_05_v.png'" onmouseout="this.src='/images/leftmenu/left_0101_05_n.png'" /></a></li>
+            </ul>
+      </div>
+    </div>
+    left E-->
+        <!--left E-->
+
+        <!--contents S-->
+        <div id="contents">
+
+        <!--상단이미지 S-->
+        <div><img src="../images/tjsong/title_songSearch.png" /></div>
+        <!--상단이미지 E-->
+
+        <!--노래검색 S-->
+
+
+<!--- javascript function --->
+<script language="javascript">
+<!--
+
+    function OnSongSearch() {
+        var str;
+
+        if (document.sform.strWord.checked) {
+            str = '1';
+        } else {
+            str = '0';
+        }
+
+        document.sform.strCond.value = str;
+        document.sform.action        = 'song_search_list.asp';
+        document.sform.submit();
+    }
+
+    function OnSongFindKeyPress() {
+        //숫자만 입력받기.
+        var keyCode = window.event.keyCode;
+        if (keyCode == 13){
+            OnSongSearch();
+        }
+    }
+
+//-->
+</script>
+
+
+    <div id="searchSong">
+                <form name='sform' method='post'>
+                <input type="hidden" name="searchOrderItem" val="">
+                <input type="hidden" name="searchOrderType" val="">
+                <input type='hidden' name='strCond' value=''>
+                        <ul class="search2">
+                                <li>
+                                <select class="searchSelectSongForm1" style="margin-top:-1px;" name="natType">
+                                        <option value="">국가별</option>
+                                        <option value="KOR" >한국</option>
+                                        <option value="ENG" >팝송</option>
+                                        <option value="JPN" >일본</option>
+                                        <option value="CHN" >중국</option>
+                                        <option value="PHL" >필리핀</option>
+                                        <option value="INS" >인도네시아</option>
+                                </select>
+                                <select class="searchSelectSongForm2" style="margin-top:-1px;" name="strType">
+                                        <option value="0" >통합검색</option>
+                                        <option value="1" >곡 제목</option>
+                                        <option value="2" selected>가수</option>
+                                        <option value="4" >작사가</option>
+                                        <option value="8" >작곡가</option>
+                                        <option value="16" >곡 번호</option>
+                                        <option value="32" >가사</option>
+                                </select>
+                                <input name="strText" type="text" value="악뮤" class='search_input2 sort_t' onKeyPress="OnSongFindKeyPress();">
+                                </li>
+                        </ul>
+                        <ul>
+                                <li class="check"><input type="checkbox" value="1" name="strWord"  class="sort_m" /> 단일검색</li>
+                        </ul>
+                        <ul>
+                                <li class="btn"><a href="javascript:OnSongSearch()"><img src="../images/tjsong/btn_search.gif" /></a></li>
+                        </ul>
+                </form>
+    </div>
+
+        <div class="song_search_tooltip" style="display:none;" >
+                <img src="/images/tjsong/song_search_tooltip.png?20181017" />
+        </div>
+
+
+
+        <!--노래검색 E-->
+
+
+        <div class="searchEnd">
+        '<span>악뮤</span>'에 대한 검색 결과입니다.
+        </div>
+
+
+<form name='form'>
+
+                <!--노래제목검색 S-->
+
+                <div id="boardTitle1">
+                <ul class="left">가수</ul>
+                <ul class="right">목록수&nbsp;&nbsp;
+                        <select class="select_list" name="strSize02" OnChange="OnSizeList(2)">
+                                <option value="15" selected>15 line</option>
+                                <option value="30" >30 line</option>
+                                <option value="50" >50 line</option>
+                                <option value="100" >100 line</option>
+                        </select>
+                </ul>
+                </div>
+
+                <div id="BoardType1">
+                <table cellpadding="0" cellspacing="0" width="740" class="board_type1">
+                <colgroup>
+                        <col width="80" />
+                        <col width="*" />
+                        <col width="110" />
+                        <col width="110" />
+                        <col width="90" />
+                        <col width="55" />
+                </colgroup>
+                <tbody>
+                <tr>
+                        <th>곡 번호 <img src='/images/tjsong/song_search_order_up.gif' class='bind_search_order' data-type='up' data-item='pro' alt='검색 오름차순' /></th>
+                        <th>곡 제목 <img src='/images/tjsong/song_search_order_up.gif' class='bind_search_order' data-type='up' data-item='index_title' alt='검색 오름차순' /></th>
+                        <th>가수 <img src='/images/tjsong/song_search_order_up.gif' class='bind_search_order' data-type='up' data-item='index_song' alt='검색 오름차순' /></th>
+                        <th>작사 <img src='/images/tjsong/song_search_order_up.gif' class='bind_search_order' data-type='up' data-item='word' alt='검색 오름차순' /></th>
+                        <th>작곡 <img src='/images/tjsong/song_search_order_up.gif' class='bind_search_order' data-type='up' data-item='com' alt='검색 오름차순' /></th>
+                        <th>서비스</th>
+                </tr>
+
+                <tr>
+
+                        <td>87032</td>
+
+                        <td class="left">답답해</td>
+                        <td>AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁,MOOCEAN</td>
+                        <td class="youtube_auto_search" data-pro="87032" data-title="답답해" data-singer="AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)"></td>
+                </tr>
+
+                <tr>
+
+                        <td>87031</td>
+
+                        <td class="left">케익의평화</td>
+                        <td>AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁,WOOGIE</td>
+                        <td class="youtube_auto_search" data-pro="87031" data-title="케익의평화" data-singer="AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)"></td>
+                </tr>
+
+                <tr>
+
+                        <td>87023</td>
+
+                        <td class="left">롱디</td>
+                        <td>AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁,DRESS</td>
+                        <td class="youtube_auto_search" data-pro="87023" data-title="롱디" data-singer="AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)"></td>
+                </tr>
+
+                <tr>
+
+                        <td>87015</td>
+
+                        <td class="left">Hero</td>
+                        <td>AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁</td>
+                        <td class="youtube_auto_search" data-pro="87015" data-title="Hero" data-singer="AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)"></td>
+                </tr>
+
+                <tr>
+
+                        <td>64292</td>
+
+                        <td class="left">Love Lee<img class='mr_icon' src='/images/tjsong/mr_icon.png'/><img class='mr_icon' src='/images/tjsong/60s_icon.png'/></td>
+                        <td>AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁,MILLENNIUM,시황(SIHWANG)</td>
+                        <td class="youtube_auto_search" data-pro="64292" data-title="Love Lee" data-singer="AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)"></td>
+                </tr>
+
+                <tr>
+
+                        <td>85475</td>
+
+                        <td class="left">V(Peace)</td>
+                        <td>자이언티(Feat.AKMU(<span class='txt'><span class='txt'>악뮤</span></span>))</td>
+                        <td>ZION.T,이찬혁,김산</td>
+                        <td>ZION.T,SLOM,박준우,김산,구영준,PEEJAY</td>
+                        <td class="youtube_auto_search" data-pro="85475" data-title="V(Peace)" data-singer="자이언티(Feat.AKMU(<span class='txt'><span class='txt'>악뮤</span></span>))"></td> 
+                </tr>
+
+                <tr>
+
+                        <td>64289</td>
+
+                        <td class="left">후라이의꿈<img class='mr_icon' src='/images/tjsong/mr_icon.png'/><img class='mr_icon' src='/images/tjsong/60s_icon.png'/></td>
+                        <td>AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁,전정환</td>
+                        <td class="youtube_auto_search" data-pro="64289" data-title="후라이의꿈" data-singer="AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)"></td>
+                </tr>
+
+                <tr>
+
+                        <td>84443</td>
+
+                        <td class="left">후라이의꿈</td>
+                        <td>AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁,전정환</td>
+                        <td class="youtube_auto_search" data-pro="84443" data-title="후라이의꿈" data-singer="AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)"></td>
+                </tr>
+
+                <tr>
+
+                        <td>84442</td>
+
+                        <td class="left">Love Lee</td>
+                        <td>AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁,MILLENNIUM,시황(SIHWANG)</td>
+                        <td class="youtube_auto_search" data-pro="84442" data-title="Love Lee" data-singer="AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)"></td>
+                </tr>
+
+                <tr>
+
+                        <td>81873</td>
+
+                        <td class="left">FREE SMILE(서울체크인OST)</td>
+                        <td>이효리,이찬혁(AKMU(<span class='txt'><span class='txt'>악뮤</span></span>))</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁,MILLENNIUM,시황(SIHWANG)</td>
+                        <td class="youtube_auto_search" data-pro="81873" data-title="FREE SMILE(서울체크인OST)" data-singer="이효리,이찬혁(AKMU(<span class='txt'><span class='txt'>악뮤</span></span>))"></td>
+                </tr>
+
+                <tr>
+
+                        <td>62945</td>
+
+                        <td class="left">낙하<img class='mr_icon' src='/images/tjsong/mr_icon.png'/><img class='mr_icon' src='/images/tjsong/60s_icon.png'/></td>
+                        <td>AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)(With IU)</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁,MILLENNIUM</td>
+                        <td class="youtube_auto_search" data-pro="62945" data-title="낙하" data-singer="AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)(With IU)"></td>
+                </tr>
+
+                <tr>
+
+                        <td>80794</td>
+
+                        <td class="left">불협화음</td>
+                        <td>Mudd the student(Feat.AKMU(<span class='txt'><span class='txt'>악뮤</span></span>))(Prod.그레이)</td>
+                        <td>MUDD THE STUDENT,이찬혁</td>
+                        <td>GRAY,MUDD THE STUDENT,이찬혁</td>
+                        <td class="youtube_auto_search" data-pro="80794" data-title="불협화음" data-singer="Mudd the student(Feat.AKMU(<span class='txt'><span class='txt'>악뮤</span></span>))(Prod.그레이)"></td>
+                </tr>
+
+                <tr>
+
+                        <td>77518</td>
+
+                        <td class="left">EVEREST</td>
+                        <td>AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)(With 샘김)</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁,적재(JUK JAE)</td>
+                        <td class="youtube_auto_search" data-pro="77518" data-title="EVEREST" data-singer="AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)(With 샘김)"></td>      
+                </tr>
+
+                <tr>
+
+                        <td>77512</td>
+
+                        <td class="left">Stupid love song</td>
+                        <td>AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)(With 크러쉬)</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁,적재(JUK JAE)</td>
+                        <td class="youtube_auto_search" data-pro="77512" data-title="Stupid love song" data-singer="AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)(With 크러쉬)"></td>
+                </tr>
+
+                <tr>
+
+                        <td>77507</td>
+
+                        <td class="left">맞짱</td>
+                        <td>AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)(With 최정훈(잔나비))</td>
+                        <td>이찬혁</td>
+                        <td>이찬혁,이현영</td>
+                        <td class="youtube_auto_search" data-pro="77507" data-title="맞짱" data-singer="AKMU(<span class='txt'><span class='txt'>악뮤</span></span>)(With 최정훈(잔나비))"></td>
+                </tr>
+
+                </tbody>
+                </table>
+                </div>
+
+
+                <!--PAGE S-->
+                <div id="page1">
+<table width='100%' cellpadding='0' cellspacing='0' border='0' class='page1'><tbody><tr>    <td>&nbsp;<b>1</b>&nbsp;<a href='song_search_list.asp?strType=2&natType=&strText=악뮤&strCond=0&searchOrderType=&searchOrderItem=&intPage=2' class='page1'>[2]</a><a href='song_search_list.asp?strType=2&natType=&strText=악뮤&strCond=0&searchOrderType=&searchOrderItem=&intPage=3' class='page1'>[3]</a><a href='song_search_list.asp?strType=2&natType=&strText=악뮤&strCond=0&searchOrderType=&searchOrderItem=&intPage=4' class='page1'>[4]</a><a href='song_search_list.asp?strType=2&natType=&strText=악뮤&strCond=0&searchOrderType=&searchOrderItem=&intPage=5' class='page1'>[5]</a>    </td></tr></tbody></table>
+                </div>
+                <!--PAGE E-->
+
+
+                <div class="conSpace2"></div>
+
+                <!--노래제목검색 E-->
+
+
+
+</form>
+
+        </div>
+
+
+        <!--quick S-->
+        <!-- 20210616Renew by KSY -->
+    <div class="quick" id="quick-menu">
+        <ul class="align" id="floater">
+                <li><img src="/images/common/quick_top.gif" /></li>
+            <li><a href="/tjsong/song_search.asp"><img src="/images/common/quick_banner_search.gif" onmouseover="this.src='/images/common/quick_banner_search_on.gif'" onmouseout="this.src='/images/common/quick_banner_search.gif'" alt="�뷡�˻�"/></a></li>
+            <li><a href="/service/service_serviceInfo.asp"><img src="/images/common/quick_banner_service.gif" onmouseover="this.src='/images/common/quick_banner_service_on.gif'" onmouseout="this.src='/images/common/quick_banner_service.gif'" alt="���񽺼���"/></a></li>
+            <li><a href="/service/service_exit.asp"><img src="/images/common/quick_banner_exit.gif" onmouseover="this.src='/images/common/quick_banner_exit_on.gif'" onmouseout="this.src='/images/common/quick_banner_exit.gif'" alt="�ǳ������Ͼȳ�"/></a></li>
+        </ul>
+    </div>
+    <!--<script type="text/javascript">moveBanner('quick-menu');</script>//-->
+        <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+        //var current_position = parseInt($('#quick-menu').css('top'),10);
+
+        var current_position = parseInt($('#quick-menu').offset().top,10);
+        var quick_menu_height = $('#quick-menu').height();
+
+        var total_position = current_position+quick_menu_height;
+        var footer_top =parseInt($('#footer').offset().top,10);
+        var move_position = footer_top-total_position;
+
+        $(window).scroll(function(){
+                var position = $(window).scrollTop();//���� ��ũ�ѹ� ��ġ
+
+                if(position<move_position){
+                        $('#quick-menu').stop().animate({"top":position+"px"},1000);
+                }
+        });
+
+});
+
+</script>
+        <!--quick E-->
+
+
+</div>
+<!--Body E-->
+
+<!--Footer S-->
+<!-- 20210616Renew by KSY -->
+<div class="hig_bottom"></div>
+
+<div id="footer">
+        <div class="ft_link">
+                <ul class="ft_linklist">
+                        <li class="lk01"><a href="http://smartcard.tjmedia.co.kr" target="_blank"><img src="/images/common/ft_link01.jpg" onmouseover="this.src='/images/common/ft_link01on.jpg'" onmouseout="this.src='/images/common/ft_link01.jpg'" alt="스마트카드"/></a></li>
+                        <li class="lk02"><a href="https://www.tjmedia.co.kr/taijinwow_Renew/ASP/LOGIN/login.asp" target="_blank"><img src="/images/common/ft_link02.jpg" onmouseover="this.src='/images/common/ft_link02on.jpg'" onmouseout="this.src='/images/common/ft_link02.jpg'" alt="협력업체"></a></li>
+                        <li class="lk03"><a href="https://agency.tjmedia.co.kr/agency_index2.asp" target="_blank"><img src="/images/common/ft_link03.jpg" onmouseover="this.src='/images/common/ft_link03on.jpg'" onmouseout="this.src='/images/common/ft_link03.jpg'" alt="대리점멤버쉽"></a></li>
+                        <li class="lk04"><a href="https://dealer.tjmedia.co.kr/dealer_index2.asp" target="_blank"><img src="/images/common/ft_link04.jpg" onmouseover="this.src='/images/common/ft_link04on.jpg'" onmouseout="this.src='/images/common/ft_link04.jpg'" alt="취급점멤버쉽"></a></li>
+                        <li class="lk05"><a href="https://www.realmastermall.com/index.asp" target="_blank"><img src="/images/common/ft_link05.jpg" onmouseover="this.src='/images/common/ft_link05on.jpg'" onmouseout="this.src='/images/common/ft_link05.jpg'" alt="리얼마스터"></a></li>
+                        <li class="lk06"><a href="http://www.ziller.co.kr" target="_blank"><img src="/images/common/ft_link06.jpg" onmouseover="this.src='/images/common/ft_link06on.jpg'" onmouseout="this.src='/images/common/ft_link06.jpg'" alt="질러"></a></li>
+                        <li class="lk07"><a href="http://www.dream.fr" target="_blank"><img src="/images/common/ft_link07.jpg" onmouseover="this.src='/images/common/ft_link07on.jpg'" onmouseout="this.src='/images/common/ft_link07.jpg'" alt="Dream"></a></li>
+                </ul>
+        </div>
+        <div class="ft_center">
+                <div class="ft_centerlist">
+                        <ul class="ctel">
+                                <li><img src="/images/common/ft_center01.png" alt="고객센터"></li>
+                                <li><img src="/images/common/ft_center02.png" alt="제품문의"></li>
+                        </ul>
+                        <ul class="clink">
+                                <li class="clink01"><a href="/service/service_serviceInfo.asp"><img src="/images/common/ft_center03.png" alt="서비스센터"></a></li>
+                                <li class="clink02"><a href="/service/service_question.asp"><img src="/images/common/ft_center04.png" alt="1:1문의"></a></li>
+                                <li class="clink03"><a href="/service/service_agencyList.asp"><img src="/images/common/ft_center05.png" alt="구입처안내"></a></li>
+                        </ul>
+                </div>
+        </div>
+        <div class="footer_wrap">
+                <div class="copyright">
+                        <div class="logo"><img src="/images/common/ft_logo.jpg" alt="TJ미디어로고"/></div>
+                        <div class="foot_menu_wrap left">
+                                <ul>
+                                        <li><a href="/company/company_info.asp"><img src="/images/common/ft_link08.png" class="sort_m"/></a></li>
+                                        <li><a href="/policy/policy_personal.asp"><img src="/images/common/ft_link09.png" class="sort_m"/></a></li>
+                                        <li><a  href="/policy/policy_interior.asp"><img src="/images/common/ft_link10.png" class="sort_m" /></a></li>
+                                        <li><a  href="/include/sitemap.asp"><img src="/images/common/ft_link11.png" class="sort_m" /></a></li>
+                                </ul>
+                                <img src="/images/common/ft_add.png" alt="주소">
+                        </div>
+                        <div class="sns_links">
+                                <ul class="top_links">
+                                        <li><a href="https://www.youtube.com/user/tjmedia00" target="_blank"><img src="/images/common/ft_sns01.png" alt="유튜브"></a></li>
+                                        <li><a href="https://blog.naver.com/tjmedia00" target="_blank"><img src="/images/common/ft_sns02.png" alt="블로그"></a></li>
+                                        <li><a href="https://www.facebook.com/alwaysfunTJ" target="_blank"><img src="/images/common/ft_sns03.png" alt="페이스북"></a></li>
+                                        <li><a href="https://www.instagram.com/tjmedia" target="_blank"><img src="/images/common/ft_sns04.png" alt="인스타그램"></a></li>
+                                </ul>
+                        </div>
+                </div>
+        </div>
+</div>
+<script type="text/javscript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+
+  ga('create', 'UA-58693666-1', 'auto');
+
+  ga('send', 'pageview');
+
+
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111094688-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111094688-1');
+</script>
+
+
+<!-- adinsight 공통스크립트 start -->
+<script type="text/javascript">
+var TRS_AIDX = 9610;
+var TRS_PROTOCOL = document.location.protocol;
+document.writeln();
+var TRS_URL = TRS_PROTOCOL + '//' + ((TRS_PROTOCOL=='https:')?'analysis.adinsight.co.kr':'adlog.adinsight.co.kr') +  '/emnet/trs_esc.js';
+document.writeln("<scr"+"ipt language='javascript' src='" + TRS_URL + "'></scr"+"ipt>");
+</script>
+<!-- adinsight 공통스크립트 end -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '598536118021979');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=598536118021979&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!--Footer E-->
+
+
+
+
+</div>
+<script type="text/javascript">
+$('.bind_search_order').click(function(){
+        var
+                        _this = $(this),
+                        keyword = "악뮤",
+                        _form = $('form[name="sform"]');
+
+                        _form.find('[name="strText"]').val(keyword);
+                        _form.find('[name="searchOrderItem"]').val(_this.data('item'));
+                        _form.find('[name="searchOrderType"]').val(_this.data('type'));
+                        OnSongSearch();
+});
+
+/*
+function OnSongSearch() {
+        var str;
+
+        if (document.sform.strWord.checked) {
+                str = '1';
+        } else {
+                str = '0';
+        }
+
+        document.sform.strCond.value = str;
+        document.sform.action        = 'song_search_list.asp';
+        document.sform.submit();
+}
+*/
+
+$('.youtube_auto_search').each(function(){
+        //$(this).html('<a style="display:block;margin:3px 0;" href="https://www.youtube.com/user/ziller/search?query='+$(this).attr('data-pro')+'" target="_blank"><img style="height:20px;" src="http://www.tjmedia.co.kr/images/tjsong/youtube_icon_01.png"></a>');
+
+        $(this).html('<a style="display:block;margin:3px 0;" href="https://www.youtube.com/user/ziller/search?query='+$(this).attr('data-pro')+'" target="_blank"><img style="height:20px;" src="/images/tjsong/youtube_icon_01.png"></a>');
+});
+
+function youtubeAction(start_eq, end_eq){
+        var search_query = "";
+        var search_list = $('.youtube_auto_search').slice(start_eq, end_eq);
+        for(var i in search_list.get()){
+                var _t = search_list.eq(i);
+                if(search_query!="")search_query += "|,|";
+                search_query += _t.attr('data-pro')+"|"+_t.attr('data-title')+"|"+_t.attr('data-singer');
+        }
+        if(search_list.length > 0){
+                // search_query = decodeURI(search_query);
+                $.ajax({
+                        'dataType' : 'jsonp',
+                        'url' : 'http://tjmedia.ivyro.net/api/youtube_finder/?v=1&q='+encodeURIComponent(search_query),
+                        'success':function(response){
+                                response = eval("("+response+")");
+                                if(typeof response.result != "undefined"){
+                                        for(var pro in response.result) {
+                                                var findWrap = $('.youtube_auto_search[data-pro="'+pro+'"]');
+                                                for(var wrap_i in findWrap.get()){
+                                                        if($('a.init_ym', findWrap.eq(wrap_i)).length === 0){
+                                                                //$(findWrap.eq(wrap_i)).append('<a style="display:block;margin:3px 0;" href="https://youtu.be/'+response.result[pro]+'" target="_blank"><img style="height:20px;" src="http://www.tjmedia.co.kr/images/tjsong/youtube_icon_01.png"></a>');
+
+                                                                $(findWrap.eq(wrap_i)).append('<a style="display:block;margin:3px 0;" href="https://youtu.be/'+response.result[pro]+'" target="_blank"><img style="height:20px;" src="/images/tjsong/youtube_icon_01.png"></a>');
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                });
+        }
+}
+var total_tr = $('.youtube_auto_search').length;
+var slice_range = 10;
+var slice_tr = (total_tr/slice_range);
+var slice_break = true;
+var slice_cnt = 0;
+if(slice_tr>0){
+        while(slice_break){
+                var start_slice = slice_cnt*slice_range;
+                var end_slice = start_slice+slice_range;
+                // youtubeAction(start_slice, end_slice);
+                if( start_slice > total_tr){
+                        slice_break = false;
+                }
+                slice_cnt++;
+        }
+}
+
+</script>
+</body>
+</html>
