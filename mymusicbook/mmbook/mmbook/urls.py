@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import sarchmusic.views
+
+# handler400 = 'loaTier.views.error400'
+# handler404 = 'loaTier.views.error404'
+# handler500 = 'loaTier.views.error500'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',sarchmusic.views.home)
 ]
